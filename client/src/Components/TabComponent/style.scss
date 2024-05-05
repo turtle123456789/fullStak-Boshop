@@ -1,0 +1,12 @@
+.nav-pills{
+    .nav-item{
+        .nav-link{
+            background: var(--gray-tab);
+            margin-left: 20px;
+            color: var(--black);
+        }
+        .nav-link.active{
+            background-color: var(--orange-tab) ;
+        }
+    }
+}

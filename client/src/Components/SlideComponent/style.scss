@@ -1,0 +1,24 @@
+.slick-slider{
+    .slideCenter{
+        display: flex !important;
+        justify-content: center;
+    }
+    .slick-arrow{
+        z-index: 10;
+        height: 48px;
+        width: 48px;
+    }
+    .slick-prev{
+        left: 10px;
+        &::before{
+            font-size: 48px;
+        }
+}
+    .slick-next{
+        right: 10px;
+        &::before{
+            font-size: 48px;
+          
+        }
+    }
+}

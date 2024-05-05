@@ -1,0 +1,147 @@
+.banner{
+    display: flex; 
+    justify-content: space-between;
+    position: relative;
+    
+    .banner_link{
+        max-width: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        >li{
+            
+            border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+            padding: 15px 0 ;
+            &:hover {
+                background: #dededea6;
+                .banner_navbar2 {
+                    transform: translateX(0);
+                }
+            }
+            .banner_navbar2{
+                display: flex;
+                justify-content: flex-start;
+                position: absolute;
+                width: 100%;
+                max-width: 80%;
+                background: var(--white);
+                box-shadow: 0 0 8px 4px #aaaaaa;
+                z-index: 4;
+                top: 0px;
+                right: 1px;
+                transform: translateX(200%);
+                bottom: 0px;
+                transition: transform ease 1s;
+                padding: 10px;
+                span{
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+                li{
+                    margin-bottom: 10px;
+                    font-weight: 500;
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+        a{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        div{
+            img{
+                width: 27px;
+                height: 27px;
+            }
+            span{
+                font-size: 16px;
+                font-weight: 600;
+                margin-left: 10px;
+            }
+        }
+        img{
+            width: 5px;
+            height: 13px;
+        }
+    }
+    .banner_slideBig{
+        max-width: 50%;
+        width: 100%;
+        border-radius: 15px;
+    }
+    .banner_slideSmall{
+        max-width: 26.2%;
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+.homeSale{
+    .homeSale_header{
+        display: flex;
+        justify-content: space-between;
+        color: var(--white);
+        background: var(--orange);
+        align-items: center;
+        padding: 5px 10px;
+        border-radius: var(--border-radius-top);
+        div{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img{
+                max-width: 30px;
+            }
+            h3{
+                padding-right: 20px;
+                margin-right: 10px;
+                border-right: 1px solid var(--white);
+            }
+            span{
+                margin: 0 10px 0 10px;
+            }
+            .timeCountDown{
+                border-radius: var(--border-radius-75);
+                background: var(--white);
+                color: var(--black);
+                padding: 5px 10px;
+            }
+        }
+        a{
+            border-radius: var(--border-radius-75);
+            background: var(--green);
+            padding: 5px 10px;
+        }
+    }
+    
+}
+.brand{
+    display: flex;
+    justify-content: space-between;
+    >div{
+        max-width: 261px;
+        >a{
+            color: var(--link);
+        }
+    }
+}
+.bestSale{
+    >div:first-child{
+        display: flex;
+        justify-content: space-between;
+    }
+    >div:last-child{
+        display: flex;
+        justify-content: center;
+        >a{
+            border: 1px solid var(--orange-tab);
+            color: var(--orange-tab);
+            border-radius: 10px;
+            padding: 5px 15px;
+        }
+    }
+}

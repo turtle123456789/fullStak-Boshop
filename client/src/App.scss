@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+:root{
+  --pink:#FFAEB4;
+  --pink-light:#f7e7ed;
+  --black:#000;
+  --white:#fff;
+  --gray: #818181;
+  --gray-light: #B7C2CB;
+  --gray-tab:#EEEEEE;
+  --green: #768134;
+  --cream: #FFF5F5;
+  --green-light :#BBD66A;
+  --orange-tab: #D65F1D;
+  --orange: #E26B14;
+  --orange-sale: #F06A26;
+  --orange-sale-light:rgba(245, 197, 165, 1);
+  --blue: #07234E;
+  --link:#4E6FB0;
+  --brown: #B20;
+  --brown-light: #C83F51;
+  --border-radius-75: 10px 10px 10px 0;
+  --border-radius-top: 10px 10px 0px 0px ;
+  --border-radius-right: 0px 10px 10px 0px ;
+  --border-radius-left: 10px 0px 0px 10px ;
+}
+body{
+  h1{
+    font-size: 32px;
+    font-weight: 600;
+  }
+  h2{
+    font-size: 24px;
+    font-weight: 600;
+  }
+  h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+  }
+  li{
+    list-style: none;
+  }
+  .hiddenCommon{
+    display: none !important;
+  }
+  img{
+    width: 100%;
+    object-fit: contain;
+  }
+  form{
+    width: 100%;
+    input{
+      width: 100%;    
+      height: 100%;  
+      border: none;       
+    }
+    button{
+      height: 100%;
+      border: none;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+  .appContainer-fluid{
+    overflow-x: hidden;
+    max-width: 1550px;
+    margin: 0 auto;
+    .appcontainer{
+      margin: 0 68px;
+    }
+    .crop-text1{
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical; 
+    }
+    .crop-text2{
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
+    .LayoutComponents{
+      display: none;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      >div{
+        width: calc(100%/5);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

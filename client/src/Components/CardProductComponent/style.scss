@@ -1,0 +1,86 @@
+.cardProduct{
+    max-width: 269px;
+    cursor: pointer;
+    .cardProduct_img{
+        border-radius: 15px;
+        overflow: hidden;
+        img:hover{
+            transform: scale(1.08);
+            transition: transform ease 1s; 
+        }
+    }
+    
+    .cardProduct_content{
+        margin-top: 10px;
+        padding: 0 10px;
+        span{
+            font-weight: 600;
+        }
+        .cardProduct_content_inforPrice{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div{
+                span{
+                    margin-right: 10px;
+                }
+                .priceDiscount{
+                    font-size: 16px;
+                    color: var(--brown);
+                }
+                .priceOrigin{
+                    color: var(--gray);
+                    text-decoration: line-through;
+                }
+            }
+            .percent{
+                font-size: 10px;
+                background: var(--green-light);
+                color: var(--white);
+                border-radius: 100%;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .progress{
+            background: var(--orange-sale-light);
+            .progress-bar{
+                background: var(--orange-sale);
+            }
+        }
+        .star-container{
+            padding: 0 !important;
+            .widget-svg{
+                width: 10px !important;
+                height: 10px !important;
+                
+            }
+        }
+        .cardProduct_commentInfor{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .cardProduct_commentInforbuyNumber{
+                display: flex;
+                margin-left: 10px;
+                padding-left: 10px;
+                border-left: 1px solid var(--black);
+                span{
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
