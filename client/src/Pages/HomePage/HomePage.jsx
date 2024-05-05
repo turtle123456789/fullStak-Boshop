@@ -38,7 +38,7 @@ import { useEffect, useRef } from "react"
             myRefs.current.ref1.style.display = "flex"
         },[])
         return(
-        <div className="appcontainer">
+        <>
             <div className="banner">
                 <div className="banner_link">
                     <li>
@@ -299,7 +299,7 @@ import { useEffect, useRef } from "react"
                     <Link to="home">Xem thêm</Link>
 
                 </div>
-            <SlideComponent/>
+            <SlideComponent numberslide={10} numberShow={5}/>
             </div>
             <div className="brand">
                 <div>
@@ -316,45 +316,20 @@ import { useEffect, useRef } from "react"
                 </div>
                 <div className="bestSale_template">
                     <div ref={el => myRefs.current.ref1 = el} className="LayoutComponents">
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
+                        <CardProductComponent numberShow={10}/>
                     </div>
                     <div ref={el => myRefs.current.ref2 = el} className="LayoutComponents">
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-             
-                        <div><CardProductComponent/></div>
+                        <CardProductComponent numberShow={20}/>
                     </div>
                     <div ref={el => myRefs.current.ref3 = el} className="LayoutComponents">
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
-                        <div><CardProductComponent/></div>
+                        <CardProductComponent numberShow={9}/>
                     </div>
                 </div>
                 <div>
                     <Link>Xem thêm &rarr;</Link>
                 </div>
             </div>
-        </div>
+            </>
         )
     }
     export default HomePage

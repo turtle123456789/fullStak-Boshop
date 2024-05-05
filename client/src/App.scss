@@ -43,6 +43,9 @@ body{
     font-weight: 600;
     margin: 0;
   }
+  h4{
+    font-size: 16px;
+  }
   li{
     list-style: none;
   }
@@ -68,6 +71,16 @@ body{
   a{
     text-decoration: none;
     color: #000;
+  }
+  ::-webkit-scrollbar {
+    background: none;
+    width: 3px;
+    border-right: 2px solid #C7C7C7; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3F3F3E; 
+    border-radius: 10px;
+  
   }
   .appContainer-fluid{
     overflow-x: hidden;
@@ -101,5 +114,6 @@ body{
         margin-bottom: 20px;
       }
     }
+
   }
 }

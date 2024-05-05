@@ -1,0 +1,114 @@
+.LayoutProductPage{
+    display: flex;
+    margin: 40px 0; 
+    .LayoutProductPage_left{
+        max-width: 30%;
+        width: 100%;
+        h3{
+            max-width: 169px;
+            margin-bottom: 10px;
+        }
+        .accordion{
+            --bs-accordion-border-color:none;
+            .accordion-item{
+                padding-right: 60px;
+                
+                .accordion-header{
+                    border-top: 1px solid #EDEDED;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    .accordion-button{
+                        padding: 0;
+                        padding-left: 0;
+                        
+                        font-size: 16PX;
+                        color: var(--black);
+                        font-weight: 600;
+                        background: none;
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                }
+                .accordion-body{
+                    padding-left: 0;
+                    padding-top: 0;
+                    form{
+                        max-height: 400px;
+                        overflow-y:auto;
+                        .form-check{
+                            margin-bottom: 10px;
+                            input:checked {
+                                background-color: var(--pink);
+                                border-color: var(--pink);
+                            }
+                        }
+                        input{
+                            cursor: pointer;
+                            &:focus{
+                                box-shadow: none;
+                            }
+                        }
+                        label{
+                            font-weight: 600;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+
+            }
+     
+        }
+        >div{
+            >div:last-child{
+                margin-right: 60px;
+                button{
+                    width: 100%;
+                    background: var(--orange);
+                    margin-right: 60px;
+                    font-size: 20px;
+                }
+            }
+        }
+        
+    }
+    .LayoutProductPage_right{
+        max-width: 70%;
+        width: 100%;
+        .LayoutProductPage_right_products{
+            display: flex;
+            flex-wrap: wrap;
+            >div{
+                max-width: calc(100%/4);
+                width: 100%;
+                padding: 0 5px;
+                margin-top: 10px;
+            }
+           
+        }
+        .pagination{
+            .page-item{
+                &.active{
+                    .page-link{
+                        background: none;
+                        color: #EE6F2E;
+                        border: 1px solid #B3B3B3;
+                    }
+                }
+                .page-link{
+                    border: none;
+                    color: var(--black);
+                    &:focus{
+                        box-shadow: none;
+                        background: none;
+                    }
+                }
+            }
+        }
+        >div:last-child{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

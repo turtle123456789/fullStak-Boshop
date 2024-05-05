@@ -14,9 +14,9 @@ const HeaderComponent = ()=>{
         <header className="header ">
             <Image src={bannerTop} fluid/>
             <div className="header_menu appcontainer">
-                <div className="header_menu_logo">
+                <Link  to='/' className="header_menu_logo">
                     <Image src={Logo}/>
-                </div>
+                </Link>
                 <div className="header_menu_navbar">
                     <form action="">
                         <input type="text" placeholder="Tìmkiếm..."/>

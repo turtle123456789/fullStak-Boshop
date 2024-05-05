@@ -1,17 +1,16 @@
 .banner{
+
     display: flex; 
     justify-content: space-between;
     position: relative;
-    
+    margin: 40px 0;
     .banner_link{
         max-width: 20%;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
         >li{
-            
             border-bottom: 2px solid rgba(0, 0, 0, 0.15);
             padding: 15px 0 ;
             &:hover {
@@ -81,6 +80,7 @@
     }
 }
 .homeSale{
+    margin-bottom: 40px;
     .homeSale_header{
         display: flex;
         justify-content: space-between;
@@ -89,6 +89,7 @@
         align-items: center;
         padding: 5px 10px;
         border-radius: var(--border-radius-top);
+        margin-bottom: 20px;
         div{
             display: flex;
             justify-content: flex-start;
@@ -120,6 +121,7 @@
     
 }
 .brand{
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
     >div{
@@ -130,9 +132,11 @@
     }
 }
 .bestSale{
+    margin-bottom: 40px;
     >div:first-child{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
     }
     >div:last-child{
         display: flex;

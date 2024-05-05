@@ -2,11 +2,12 @@ import Slider from "react-slick";
 import CardProductComponent from "../CardProductComponent/CardProductComponent";
 import './style.scss'
 
-const SlideComponent = ()=>{
+const SlideComponent = (props)=>{
+    const {numberslide, numberShow} = props
     var settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: numberShow,
         slidesToScroll: 1,
         autoplay:true,
         centerPadding: "0px",
@@ -14,12 +15,11 @@ const SlideComponent = ()=>{
       };
     return(
         <Slider {...settings}>
-            <div className="slideCenter"><CardProductComponent/></div>
-            <div className="slideCenter"><CardProductComponent/></div>
-            <div className="slideCenter"><CardProductComponent/></div>
-            <div className="slideCenter"><CardProductComponent/></div>
-            <div className="slideCenter"><CardProductComponent/></div>
-            <div className="slideCenter"><CardProductComponent/></div>
+                {Array.from({length:numberslide},(_,index)=>(
+                    <div key={index}>
+                        <CardProductComponent  numberShow={1}/>
+                    </div>
+            ))}
         </Slider>
     )
 }
