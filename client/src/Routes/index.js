@@ -1,6 +1,7 @@
 import HomePage from "../Pages/HomePage/HomePage";
 import IntroducePage from "../Pages/IntroducePage/IntroducePage";
 import NotFoundPage from "../Pages/NotFoundPage/NotFoundPage";
+import ProductDetailPage from "../Pages/ProductDetailPage/ProductDetailPage";
 import ProductPage from "../Pages/ProductPage/ProductPage";
 
 export const routes = [
@@ -20,7 +21,13 @@ export const routes = [
         isShowHeaderFooter: true
     },
     {
+        path: '/productdetail',
+        page: ProductDetailPage,
+        isShowHeaderFooter: true
+    },
+    {
         path: "*",
         page: NotFoundPage,
-    }
+    },
+    
 ]

@@ -9,16 +9,17 @@ const SlideComponent = (props)=>{
         speed: 500,
         slidesToShow: numberShow,
         slidesToScroll: 1,
+        swipeToSlide: true,
         autoplay:true,
         centerPadding: "0px",
 
       };
     return(
         <Slider {...settings}>
-                {Array.from({length:numberslide},(_,index)=>(
-                    <div key={index}>
-                        <CardProductComponent  numberShow={1}/>
-                    </div>
+            {Array.from({length:numberslide},(_,index)=>(
+                <div className="slideCenter" key={index}>
+                    <CardProductComponent  numberShow={1}/>
+                </div>
             ))}
         </Slider>
     )

@@ -124,7 +124,7 @@
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
-    >div{
+    >div:first-child{
         max-width: 261px;
         >a{
             color: var(--link);

@@ -2,6 +2,13 @@
     .slideCenter{
         display: flex !important;
         justify-content: center;
+        padding: 0 5px;
+    }
+    .slick-slide
+    {
+        img{
+            cursor: pointer;
+        }
     }
     .slick-arrow{
         z-index: 10;

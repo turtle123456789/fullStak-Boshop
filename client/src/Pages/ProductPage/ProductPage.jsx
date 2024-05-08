@@ -1,4 +1,4 @@
-import { Accordion, Button, Carousel, Form, Image } from 'react-bootstrap'
+    import { Accordion, Button, Carousel, Form, Image } from 'react-bootstrap'
 import bannerProduct0 from '../../assets/images/bannerProduct0.png'
 import bannerProduct1 from '../../assets/images/bannerProduct1.png'
 import './style.scss'
@@ -9,7 +9,7 @@ const ProductPage = ()=>{
     <div className="LayoutProductPage">
         <div className="LayoutProductPage_left">
             <span>Danh mục</span>
-            <h3>CHĂM SÓC TÓC & DA ĐẦU</h3>
+            <h3 className='crop-text2'>CHĂM SÓC TÓC & DA ĐẦU</h3>
             <div>
                 <Accordion defaultActiveKey={['0','1','2','3','4','5']} alwaysOpen>
                     <Accordion.Item eventKey="0">
@@ -302,7 +302,6 @@ const ProductPage = ()=>{
                     pageRangeDisplayed={2}
                     marginPagesDisplayed={2}
                     pageCount={4}
-                    
                     previousLabel=""
                     pageClassName="page-item"
                     pageLinkClassName="page-link"

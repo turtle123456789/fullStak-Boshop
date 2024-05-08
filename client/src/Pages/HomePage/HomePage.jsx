@@ -312,7 +312,7 @@ import { useEffect, useRef } from "react"
             <div className="bestSale">
                 <div>
                     <h2>BEST SELLER</h2>
-                    <TabComponent changeStyle={changeStyle}/>
+                    <TabComponent changeStyle={changeStyle} myRefs={myRefs}/>
                 </div>
                 <div className="bestSale_template">
                     <div ref={el => myRefs.current.ref1 = el} className="LayoutComponents">

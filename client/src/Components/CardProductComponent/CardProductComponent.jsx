@@ -14,13 +14,13 @@ const CardProductComponent = (props) =>{
                         <div className="cardProduct_img">
                             <Image src={product1}/>
                         </div>
-                        <Link to="product">
+                        <Link to={'/productdetail'}>
                             <div className="cardProduct_content">
                                 <span className="cardProduct_content_name crop-text1">
-                                BNBG
+                                    BNBG
                                 </span>
                                 <p className="cardProduct_content_infor crop-text2">
-                                Son Tint Bóng Căng Mọng Hàn Quốc ROMAND Juicy Lasting Tint đa dạng màu phù hợp nhiều tông da
+                                    Son Tint Bóng Căng Mọng Hàn Quốc ROMAND Juicy Lasting Tint đa dạng màu phù hợp nhiều tông da
                                 </p>
                                 <div className="cardProduct_content_inforPrice">
                                     <div>
