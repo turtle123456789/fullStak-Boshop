@@ -4,8 +4,23 @@
     align-items: center;
     .header_menu_logo{
         max-width: 240px;
+        position: relative;
         width: 100%;
+        overflow: hidden;
+        &::before{
+            content: "";
+            position: absolute;
+            left: -665px;
+            top: -460px;
+            width: 220px;
+            height: 15px;
+            background-color: rgba(255, 255, 255, 0.4);
+            transform: rotate(-45deg);
+            -webkit-animation: searchLights 1.5s ease-out 1s infinite;
+            animation: searchLights 1.5s ease-out 1s infinite;
+        }
     }
+    
     .header_menu_navbar{
 
         max-width: 700px;
@@ -15,7 +30,6 @@
             position: relative;
             height: 42px;
             margin-top: 16px;
-           
             input{
                 border-radius: 15px;
                 background: var(--pink-light);
@@ -27,6 +41,10 @@
                 background: var(--pink);
                 border-radius: var(--border-radius-right);
                 width: 64px;
+                border: 1px solid #dba8a8;
+                &:hover{
+                    background: #ee9aa7;
+                }
                 img{
                     max-width: 20px;
                 }
@@ -50,7 +68,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        span{
+        >span{
             border-right: 1px solid var(--black);
             padding-right: 30px;
             line-height: 30px;
@@ -58,5 +76,38 @@
         img{
             max-width: 30px;
         }
+        >div{
+            a{
+                margin: 0 5px;
+                &:hover,&.active{
+                    color: var(--pink)
+                }
+            }
+            &:last-child{
+                position: relative;
+                span{
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    background: var(--green-light);
+                    border-radius: 50%;
+                    color: var(--white);
+                    text-align: center;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+@keyframes searchLights {
+    0% {
+        left: -100px;
+        top: 0;
+    }
+    100% {
+        left: 160px;
+        top: 0;
     }
 }

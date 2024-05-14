@@ -1,10 +1,19 @@
 .cardProduct{
     max-width: 269px;
     padding: 0 5px;
+    margin: 0 5px;
     cursor: pointer;
+    padding: 15px 10px;
+    border: 1px solid #ededed87;
+    box-shadow: 1px 1px 5px #ededed;
+    &:hover{
+        border: 1px solid #eeeeee;
+        box-shadow: 1px 1px 10px #dbdbdb; 
+    }
     .cardProduct_img{
         border-radius: 15px;
         overflow: hidden;
+        border: 1px solid #d9cccc;
         img:hover{
             transform: scale(1.08);
             transition: transform ease 1s; 
@@ -14,6 +23,11 @@
     .cardProduct_content{
         margin-top: 10px;
         padding: 0 10px;
+        font-weight: 600;
+        transition: all ease 0.5s;
+        &:hover{
+            color: #d64242;
+        }
         span{
             font-weight: 600;
         }

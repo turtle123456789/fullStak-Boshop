@@ -113,8 +113,14 @@
             }
         }
         a{
+            &:hover{
+                background: #aae13a;
+                border: 1px solid #e4c7a7;
+                box-shadow: 1px 1px 3px 1px #96501d;
+            }
+            border: 1px solid #e4c7a7;
             border-radius: var(--border-radius-75);
-            background: var(--green);
+            background: #B8D77A;
             padding: 5px 10px;
         }
     }
@@ -127,6 +133,9 @@
     >div:first-child{
         max-width: 261px;
         >a{
+            &:hover{
+                color: #1000ff;
+            }
             color: var(--link);
         }
     }
@@ -142,6 +151,10 @@
         display: flex;
         justify-content: center;
         >a{
+            &:hover{
+                color: #fff;
+                background: var(--orange-tab);
+            }
             border: 1px solid var(--orange-tab);
             color: var(--orange-tab);
             border-radius: 10px;

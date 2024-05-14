@@ -83,6 +83,7 @@ const FooterComponent = ()=>{
                         <input type="text" placeholder="Nhập địa chỉ email" />
                         <Button>Đăng ký</Button>
                     </form>
+                    <br />
                     <h3>Phương thức thanh toán</h3>
                     <div>
                         <div>
@@ -98,6 +99,7 @@ const FooterComponent = ()=>{
                             <Image src={vnpay}/>
                         </div>
                     </div>
+                    <br />
                     <Image src={moit}/>
                 </div>
             </div>

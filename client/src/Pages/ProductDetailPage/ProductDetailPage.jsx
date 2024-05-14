@@ -14,10 +14,10 @@ import './style.scss'
 import StarRatings from "react-star-ratings";
 import SlideComponent from "../../Components/SlideComponent/SlideComponent";
 import ReactPaginate from "react-paginate";
+import FormCountComponent from "../../Components/FormCountComponent/FormCountComponent";
 const ProductDetailPage = ()=>{
     const [changeImg,setChangeImg] = useState(productdetail0)
     const [activeCapacity, setActiveCapacity] = useState(null);
-    const [valueQuantity,setValueQuantity] = useState(0)
     const [show, setShow] = useState(false);
     const [rating, setRating] = useState(0);
     const handleClose = () => setShow(false);
@@ -33,14 +33,6 @@ const ProductDetailPage = ()=>{
     };
     const handleChangeImg=(src)=>{
         setChangeImg(src)
-    }
-    const increment = ()=>{
-        setValueQuantity(valueQuantity+1)
-    }
-    const decrement = ()=>{
-        if(valueQuantity>=1){
-            setValueQuantity(valueQuantity-1)
-        }
     }
     const showFeedback= ()=>{
         document.getElementById("productDetail_reviews_feedback").style.display = "block"
@@ -127,11 +119,7 @@ const ProductDetailPage = ()=>{
                         </div>
                     </div>
                     <span>Số lượng</span>
-                    <div className="productDetail_inf_quantity">
-                        <Button onClick={decrement}>-</Button>
-                        <input type="number" name="quantity" onChange={(e) => setValueQuantity(e.target.value)} value={valueQuantity}  id="" />
-                        <Button onClick={increment}>+</Button>
-                    </div>
+                    <FormCountComponent/>
                     <div className="productDetail_inf_button">
                         <Button><div><Image src={shoppingCartWhite}/></div> THÊM VÀO GIỎ HÀNG</Button>
                         <Button><div><Image src={creditCard}/></div> MUA NGAY</Button>

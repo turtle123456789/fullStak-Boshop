@@ -1,6 +1,5 @@
 
 import { Button, Image } from 'react-bootstrap'
-import heart from '../../assets/icon/heart.svg' 
 import helpline from '../../assets/icon/helpline.svg' 
 import login from '../../assets/icon/login.svg' 
 import shoppingCart from '../../assets/icon/shopping-cart.svg' 
@@ -32,9 +31,12 @@ const HeaderComponent = ()=>{
                 <div className="header_menu_other">
                     <Link><Image src={helpline}/></Link>
                     <span>0795718425</span>
-                    <Link><Image src={login}/></Link>
-                    <Link><Image src={heart}/></Link>
-                    <Link><Image src={shoppingCart}/></Link>
+                    <div>
+                        <Image src={login}/><Link to='/login'>Đăng nhập</Link>/<Link to='/register'>Đăng ký</Link>
+                    </div>
+                    <div>
+                        <Link to="/checkoutpage"><Image src={shoppingCart}/></Link><span>5</span>
+                    </div>
                 </div>
             </div>
         </header>

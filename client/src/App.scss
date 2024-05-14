@@ -13,7 +13,7 @@
   --gray: #818181;
   --gray-light: #B7C2CB;
   --gray-tab:#EEEEEE;
-  --green: #768134;
+  --green: #25a325;
   --cream: #FFF5F5;
   --green-light :#BBD66A;
   --orange-tab: #D65F1D;
@@ -21,9 +21,11 @@
   --orange-sale: #F06A26;
   --orange-sale-light:rgba(245, 197, 165, 1);
   --blue: #07234E;
-  --link:#4E6FB0;
+  --blue-dark: #362962;
+  --blue-light: #69b1ff;
+  --link:#327fd0;
   --brown: #B20;
-  --brown-light: #C83F51;
+  --brown-light: #ac0033;
   --border-radius-75: 10px 10px 10px 0;
   --border-radius-top: 10px 10px 0px 0px ;
   --border-radius-right: 0px 10px 10px 0px ;
@@ -75,6 +77,7 @@ body{
   a{
     text-decoration: none;
     color: #000;
+    transition: all ease 0.5s;
   }
   ::-webkit-scrollbar {
     background: none;

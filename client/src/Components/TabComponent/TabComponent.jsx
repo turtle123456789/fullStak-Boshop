@@ -1,7 +1,7 @@
 import { Nav } from "react-bootstrap"
 import './style.scss'
 const TabComponent= (props)=>{
-    const {changeStyle, myRefs} = props
+    const {changeStyle} = props
     const handleSelect = (eventKey)=>{
         changeStyle(eventKey)
     }
